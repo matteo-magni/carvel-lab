@@ -1,0 +1,21 @@
+apiVersion: packaging.carvel.dev/v1alpha1
+kind: PackageInstall
+---
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: Package
+---
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: PackageMetadata
+metadata:
+  name: sample.package.example.com
+spec:
+  categories:
+  - examples
+  displayName: A sample package
+  longDescription: |
+    Just a sample package
+  maintainers:
+  - name: I, me and myself
+  providerName: Still me
+  shortDescription: Just a sample package
+  supportDescription: Not supported
